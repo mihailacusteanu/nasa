@@ -3,8 +3,8 @@ defmodule LandingTest do
   alias Nasa.Landing
 
   test "get total fuel for landing Apollo 11 on Earth" do
-    weight_of_apollo11 = 28801
+    weight_of_apollo11 = 28_801
     earth_gravity = 9.807
-    assert Landing.get_fuel(weight_of_apollo11, earth_gravity) == 13447
+    assert Landing.get_fuel(weight_of_apollo11, earth_gravity) == 13_447
   end
 end
