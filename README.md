@@ -1,21 +1,13 @@
-# Nasa
+# NASA
 
-**TODO: Add description**
+  ## Examples
 
-## Installation
+      iex> Nasa.get_fuel_for_travel(28801, [ [:launch, 9.807], [:land, 1.62], [:launch, 1.62], [:land, 9.807]])
+      51898
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `nasa` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:nasa, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/nasa>.
+      iex> Nasa.get_fuel_for_travel(14606, [[:launch, 9.807], [:land, 3.711], [:launch, 3.711], [:land, 9.807]])
+      33388
+      
+      iex> Nasa.get_fuel_for_travel(75432, [[:launch, 9.807], [:land, 1.62], [:launch, 1.62], [:land, 3.711], [:launch, 3.711], [:land, 9.807]])
+      212161
 
